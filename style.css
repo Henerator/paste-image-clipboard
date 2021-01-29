@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 :root {
-  --color-light: #fff;
-  --color-dark: #333;
+  --color-light: #222;
+  --color-dark: #fff;
+  --color-border: rgba(255, 255, 255, 0.5);
 }
 
 * {
@@ -29,7 +30,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 6px;
-  border: 6px dashed rgba(0, 0, 0, 0.3);
+  border: 6px dashed var(--color-border);
   border-radius: 10px;
   overflow: hidden;
 }
