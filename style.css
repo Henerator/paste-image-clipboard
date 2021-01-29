@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+:root {
+  --color-light: #fff;
+  --color-dark: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-light);
+}
+
+.container {
+  width: 600px;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: 6px dashed rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  color: var(--color-dark);
+}
+
+.message__text {
+  margin-top: 6px;
+}
+
+.shortcut {
+  display: flex;
+  align-items: center;
+}
+
+.shortcut__key {
+  padding: 6px 12px;
+  border: 2px solid var(--color-dark);
+  border-radius: 6px;
+}
+
+.shortcut__sign {
+  margin: 0 6px;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.hidden {
+  display: none;
+}
